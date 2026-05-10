@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alec Hodgkinson — My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="site-nav" aria-label="Main navigation">
+        <span class="site-nav-current" aria-current="page">Intro</span>
+        <a class="site-nav-link" href="#raster-heading" data-section="raster-heading">Raster</a>
+        <a class="site-nav-link" href="#vector-heading" data-section="vector-heading">Vector</a>
+        <a class="site-nav-link" href="#animate-heading" data-section="animate-heading">Animate</a>
+        <a class="site-nav-link" href="#indesign-heading" data-section="indesign-heading">InDesign</a>
+        <a class="site-nav-link" href="#favorites-heading" data-section="favorites-heading">Favorites</a>
+        <a class="site-nav-link" href="bio.html">Bio / Resume</a>
+    </nav>
+
+    <header class="site-header">
+        <h1>My Website</h1>
+        <p id="intro">
+            Hi, My name is Alec Hodgkinson. I am a software engineer.
+            Prior to this class a lot of my work was focused on a combination of traditional techniques such as charcoal and pencil as well as a combination of mixed media techniques such as paint, cutting machine, and India inks. This has been a step outside of my typical workflow and has allowed me to gain new skills
+        </p>
+    </header>
+
+    <main class="site-main">
+        <section class="project" aria-labelledby="raster-heading">
+            <h2 id="raster-heading">Raster Final</h2>
+            <figure class="project-figure">
+                <img src="imgs/HodgkinsonAlec_PSFinal.jpg" alt="Raster final composite artwork" loading="lazy">
+            </figure>
+            <p>
+                For the Photoshop final project I took a variety of photos both taken by myself as well d on the internet and composed them through layering and masking techniques. This piece came from an irreverent place where I wasn't sure what to make of the project description. I had recently watched a video on nuclear sites, so I imagined what would happen if there was a nuclear accident causing crabs to beoame giant and they attacked!
+            </p>
+        </section>
+
+        <section class="project" aria-labelledby="vector-heading">
+            <h2 id="vector-heading">Vector Final</h2>
+            <figure class="project-figure">
+                <img src="imgs/HodgkinsonAlec_AIFinal.png" alt="Vector final illustration" loading="lazy">
+            </figure>
+            <p>
+                In the Illustrator final project I used Mount Fuji via Shinkansen. I used a variety of simple shapes joined together into groups to create the crabs, houses, and telephone lines. I used the text tool to add some text with a heavy stroke.
+            </p>
+        </section>
+
+        <section class="project" aria-labelledby="animate-heading">
+            <h2 id="animate-heading">Adobe Animate Final</h2>
+            <figure class="project-figure">
+                <img src="imgs/Hodgkinson_Alec_AnimateFinal.gif" alt="Animated scene from Hodgkinson's Adobe Animate final assignment" loading="lazy">
+            </figure>
+            <p>
+                For the Adobe Animate final I built a short motion piece using timelines, tweening, and layer organization to keep backgrounds, characters, and effects separate—then exported as a GIF for easy viewing on this page.
+            </p>
+        </section>
+
+        <section class="project" aria-labelledby="indesign-heading">
+            <h2 id="indesign-heading">InDesign Final</h2>
+            <figure class="project-figure project-figure-pdf">
+                <iframe
+                    src="imgs/Hodgkinson_Alec_InDesign_Final.pdf#view=FitH"
+                    title="Hodgkinson InDesign final (PDF embedded preview)"
+                    class="project-pdf-frame"
+                    loading="lazy"></iframe>
+            </figure>
+            <p>
+                Final layout assembled in Adobe InDesign (margins, type styles, spreads, linked assets).
+            </p>
+            <p class="pdf-fallback-link">
+                <a href="imgs/Hodgkinson_Alec_InDesign_Final.pdf" target="_blank" rel="noopener noreferrer">Open InDesign final (PDF) in a new tab</a>
+            </p>
+        </section>
+
+        <section class="project project-favorites" aria-labelledby="favorites-heading">
+            <h2 id="favorites-heading">Favorite Links</h2>
+
+            <section class="favorite-subsection" aria-labelledby="favorite-sites-subheading">
+                <h3 id="favorite-sites-subheading" class="favorite-subsection-title">Sites</h3>
+                <div class="project-figure project-figure-link" role="group" aria-label="External site links">
+                    <div class="favorite-links">
+                        <a class="favorite-link" href="https://ramid.ccsf.edu/" target="_blank" rel="noopener noreferrer">
+                            <img src="imgs/canvas-logo-1024x1024.webp" alt="Canvas — visit site (opens in new tab)" loading="lazy">
+                        </a>
+                        <a class="favorite-link" href="https://www.ccsf.edu/" target="_blank" rel="noopener noreferrer">
+                            <img src="imgs/ccsf_logo.png" alt="CCSF — visit site (opens in new tab)" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="favorite-subsection favorite-subsection-video" aria-labelledby="favorite-video-subheading">
+                <h3 id="favorite-video-subheading" class="favorite-subsection__title">Video</h3>
+                <figure class="project-figure favorite-media-video-wrap">
+                    <div class="video-embed">
+                        <iframe
+                            src="https://www.youtube.com/embed/y9K18CGEeiI?si=4X6VQ0pvicCF7po7"
+                            title="YouTube video player"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
+                </figure>
+            </section>
+
+            <p>Favorite places on the web: Canvas and the CCSF website, plus a YouTube clip in the Video section above.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Alec Hodgkinson &mdash; VMD 105, CCSF</p>
+    </footer>
+
+    <button class="scroll-top-btn" aria-label="Scroll to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button>
+
+    <script>
+        // Fade-in on scroll
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.project').forEach(el => {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('is-visible');
+            } else {
+                fadeObserver.observe(el);
+            }
+        });
+
+        // Active nav link on scroll
+        const sections = document.querySelectorAll('.project[aria-labelledby]');
+        const navLinks = document.querySelectorAll('.site-nav-link[data-section]');
+        const homeIndicator = document.querySelector('.site-nav-current');
+
+        const navObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('aria-labelledby');
+                    navLinks.forEach(link => {
+                        link.classList.toggle('is-active', link.dataset.section === id);
+                    });
+                    homeIndicator.classList.add('is-dimmed');
+                }
+            });
+        }, { rootMargin: '-40% 0px -50% 0px' });
+
+        sections.forEach(s => navObserver.observe(s));
+
+        // Scroll-to-top button visibility + restore Home when at top
+        const scrollBtn = document.querySelector('.scroll-top-btn');
+        window.addEventListener('scroll', () => {
+            scrollBtn.classList.toggle('is-visible', window.scrollY > 400);
+            if (window.scrollY < 80) {
+                navLinks.forEach(l => l.classList.remove('is-active'));
+                homeIndicator.classList.remove('is-dimmed');
+            }
+        }, { passive: true });
+    </script>
+</body>
+</html>

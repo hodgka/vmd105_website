@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio / Resume — Alec Hodgkinson</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bio-page">
+    <nav class="site-nav" aria-label="Main navigation">
+        <a class="site-nav-link" href="index.html">Home</a>
+        <a class="site-nav-link" href="index.html#raster-heading">Raster</a>
+        <a class="site-nav-link" href="index.html#vector-heading">Vector</a>
+        <a class="site-nav-link" href="index.html#animate-heading">Animate</a>
+        <a class="site-nav-link" href="index.html#indesign-heading">InDesign</a>
+        <a class="site-nav-link" href="index.html#favorites-heading">Favorites</a>
+        <span class="site-nav-current" aria-current="page">Bio / Resume</span>
+    </nav>
+
+    <header class="site-header">
+        <h1>Bio / Resume</h1>
+        <p id="intro">
+            Infrastructure and software engineer with a background in machine learning, robotics-related perception, and multimodal datasets—currently also studying visual media design at City College of San Francisco.
+        </p>
+    </header>
+
+    <main>
+
+        <section class="bio-section bio-section-experience" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
+
+            <article class="experience-role">
+                <h3>Infrastructure Engineer</h3>
+                <p class="role-meta">DoorDash · Full-time · Nov 2024 – Present · 1 yr 7 mos · Remote</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Software Engineer</h3>
+                <p class="role-meta">Perimetrics, Inc. · Full-time · Jan 2023 – Aug 2024 · 1 yr 8 mos</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Software Engineer</h3>
+                <p class="role-meta">Thumbtack · Full-time · Feb 2022 – Jan 2023 · 1 yr</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Senior Machine Learning Engineer</h3>
+                <p class="role-meta">DawnLight · Full-time · Aug 2020 – Feb 2022 · 1 yr 7 mos</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Machine Learning Engineer</h3>
+                <p class="role-meta">Panasonic Beta · Full-time · Mar 2018 – Jul 2020 · 2 yrs 5 mos</p>
+
+                <h4>Home Action Genome: Compositional Activity Recognition in the Home</h4>
+                <p>Collected a multi-view, multi-modal dataset composed of hierarchically structured activities set in the home.</p>
+                <ul>
+                    <li>Wrote sensor firmware for a Raspberry Pi based sensor kit with sensors communicating using SMBus.</li>
+                    <li>Wrote a distributed capturing script to jointly record audio, video, and multiple sensor streams in a synchronized manner using PyAV, Jack, and Fabric 2.</li>
+                    <li>Created a Flask based front end interface speeding up recording time by 50x, while also allowing people unfamiliar with the recording process to manage recordings.</li>
+                    <li>Created a baseline model for the Home Action Genome dataset using PyTorch.</li>
+                    <li>Helped organize the Compositionality and Multimodal Perception workshop (CAMP) at ECCV 2020.</li>
+                </ul>
+
+                <h4>DoorGym: A Scalable Door Opening Environment And Baseline Agent</h4>
+                <ul>
+                    <li>Designed a novel vision pipeline to perform state estimation for a door opening robot using PyTorch and OpenCV.</li>
+                    <li>Created an inference server that runs at over 60 FPS to communicate between the robot platform perception pipeline and control policy pipeline.</li>
+                    <li>Co-authored a paper accepted at the Deep Reinforcement Learning Workshop at NeurIPS 2019.</li>
+                </ul>
+                <p class="role-note">Reinforcement Learning (RL) has brought forth ideas of autonomous robots that can navigate real-world environments with ease, aiding humans in a variety of tasks. RL agents have just begun to make their way out of simulation into the real world.</p>
+                <p class="role-note"><strong>Open source:</strong> PSVL/DoorGym — domain-randomized door opening training environment.</p>
+                <p class="role-note"><strong>ECCV 2020:</strong> International Challenge on Compositional and Multimodal Perception (workshop).</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Machine Learning Engineer</h3>
+                <p class="role-meta">Panasonic USA · Mar 2017 – Mar 2018 · 1 yr 1 mo</p>
+                <p>Developed novel end-to-end deep learning models for image and video compression. Authored a technical paper explaining research and results for Panasonic Technology Symposium. Collaborated with other engineers, assisting in model development to push projects forward.</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Deep Learning Intern</h3>
+                <p class="role-meta">Junior.io · May 2016 – Aug 2016 · 4 mos</p>
+                <p>Technical intern involved in all parts of the design and prototyping process, specifically incorporating machine learning and AI techniques into products and general product development. Projects included a collaborative music recommender system for an open office space, built using Keras, a NoSQL database, and a RESTful API.</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Undergraduate Research Assistant</h3>
+                <p class="role-meta">Center for Infrastructure, Transportation, and the Environment, Rensselaer Polytechnic Institute · Aug 2015 – Dec 2015 · 5 mos</p>
+                <p>Responsible for helping build economic models of material good distribution strategies over disaster-struck areas. Compiled and decomposed information from a variety of sources into a more easily digestible form.</p>
+            </article>
+
+            <article class="experience-role">
+                <h3>Administrative Assistant</h3>
+                <p class="role-meta">Rensselaer Polytechnic Institute · Aug 2013 – May 2014 · 10 mos · Troy, NY</p>
+                <p>Performed a wide array of administrative tasks including organizing a 300+ file system, assembling information packets with attention to detail, and helping coordinate interdepartmental communication.</p>
+            </article>
+        </section>
+
+        <section class="bio-section" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <ol>
+                <li>City College of San Francisco — Visual Media Design coursework (in progress).</li>
+                <li>Rensselaer Polytechnic Institute — undergraduate studies (see experience for related roles).</li>
+            </ol>
+        </section>
+
+        <section class="bio-section" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <ul>
+                <li>Infrastructure and software engineering (production systems, full-time roles).</li>
+                <li>Machine learning: PyTorch, model development, multimodal and perception pipelines.</li>
+                <li>Engineering tools: Python, OpenCV, Flask, embedded sensors (SMBus), distributed recording (PyAV, Jack, Fabric).</li>
+                <li>Design: raster (Photoshop layers, masking, compositing), vector (Illustrator shapes, type), traditional media (charcoal, pencil, mixed media, paint, ink).</li>
+            </ul>
+        </section>
+
+        <section class="bio-section" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Highlighted class work (VMD)</h2>
+            <ul>
+                <li>Raster final — composite and narrative piece (see <a href="index.html">Home</a>).</li>
+                <li>Vector final — illustrative scene with shapes and type (see <a href="index.html">Home</a>).</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Alec Hodgkinson &mdash; VMD 105, CCSF</p>
+    </footer>
+</body>
+</html>
